@@ -8,7 +8,7 @@ package ec.edu.uees.reproductor;
  *
  * @author user
  */
-public class Reproductor_musica implements List {
+public class ReproductorModel implements List {
     private Nodo inicio;
     private Nodo actual;
 
