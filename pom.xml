@@ -12,4 +12,26 @@
         <exec.mainClass>ec.edu.uees.listas.Listas</exec.mainClass>
     </properties>
     <name>reproductor</name>
+
+    <dependencies>
+        <dependency>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-controls</artifactId>
+          <version>21.0.1</version>
+        </dependency>
+  </dependencies>
+  
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-maven-plugin</artifactId>
+        <version>0.0.8</version>
+        <configuration>
+          <mainClass>HelloFX</mainClass>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+    
 </project>
