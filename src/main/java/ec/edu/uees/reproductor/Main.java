@@ -33,7 +33,7 @@ public class Main {
         fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
 
         JPanel panel = new JPanel();
-        panel.setLayout(new GridLayout(3, 1)); // Usar un GridLayout para organizar los componentes
+        panel.setLayout(new GridLayout(3, 1)); 
 
         panel.add(fileNameField);
         panel.add(playButton);
@@ -67,7 +67,7 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 String fileName = fileNameField.getText();
                 if (!fileName.isEmpty()) {
-                    try (PrintWriter writer = new PrintWriter(new FileWriter("./music/" + fileName + ".wav"))) {
+                    try (PrintWriter writer = new PrintWriter(new FileWriter("./music/" + fileName + ".WAV"))) {
                         // Crear un archivo nuevo para guardar la música
                     } catch (IOException ex) {
                         ex.printStackTrace();
